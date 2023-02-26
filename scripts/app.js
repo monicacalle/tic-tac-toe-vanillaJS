@@ -7,6 +7,7 @@ const gameData = [
 let editedPlayer = 0;
 let activePlayer = 0;
 let currentRound = 1;
+let gameIsOver = false;
 
 const players = [
   {
@@ -32,7 +33,7 @@ const editPlayer2BtnElement = document.getElementById("edit-player-2-btn");
 const cancelConfigBtnElement = document.getElementById("cancel-config-btn");
 const startNewGameBtnElement = document.getElementById("start-game-btn");
 const gameFieldElements = document.querySelectorAll("#game-board li");
-//const gameBoardElements = document.getElementById("game-board");
+// const gameBoardElements = document.getElementById("game-board");
 
 editPlayer1BtnElement.addEventListener("click", openPlayerConfig);
 editPlayer2BtnElement.addEventListener("click", openPlayerConfig);
